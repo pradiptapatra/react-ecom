@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
+
 
 const Navbar = () => {
 
@@ -26,10 +28,6 @@ const Navbar = () => {
                                             <Link to="/">
                                                 <Button>
                                                     <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" width="20" className="mr-2" /> Fashion 
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" className="ml-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
-                                                    </svg>
-                                                    <span className="MuiTouchRipple-root css-w0pj6f"></span>
                                                 </Button>
                                             </Link>
                                             <div className="submenu">
@@ -45,10 +43,6 @@ const Navbar = () => {
                                             <Link to="/">
                                                 <Button>
                                                     <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" width="20" className="mr-2" /> Fashion 
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" className="ml-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
-                                                    </svg>
-                                                    <span className="MuiTouchRipple-root css-w0pj6f"></span>
                                                 </Button>
                                             </Link>
                                             <div className="submenu">
@@ -64,10 +58,6 @@ const Navbar = () => {
                                             <Link to="/">
                                                 <Button>
                                                     <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" width="20" className="mr-2" /> Fashion 
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" className="ml-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
-                                                    </svg>
-                                                    <span className="MuiTouchRipple-root css-w0pj6f"></span>
                                                 </Button>
                                             </Link>
                                             <div className="submenu">
@@ -83,10 +73,6 @@ const Navbar = () => {
                                             <Link to="/">
                                                 <Button>
                                                     <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" width="20" className="mr-2" /> Fashion 
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" className="ml-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
-                                                    </svg>
-                                                    <span className="MuiTouchRipple-root css-w0pj6f"></span>
                                                 </Button>
                                             </Link>
                                             <div className="submenu">
@@ -109,7 +95,7 @@ const Navbar = () => {
                                     <li className="list-inline-item">
                                         <Link to="/">
                                             <Button>
-                                                <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" width="20" className="mr-2" /> Fashion<span className="MuiTouchRipple-root css-w0pj6f"></span>
+                                                <img src="https://api.spicezgold.com/download/file_1734525204708_fash.png" width="20" className="mr-2" /> Fashion
                                             </Button>
                                         </Link>
                                         <div className="submenu false">

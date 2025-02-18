@@ -10530,14 +10530,14 @@ nav .navPart2 ul li:hover .submenu {
     left: 3%!important
 }
 
-.homeBannerSection .slick-arrow.slick-prev:after, .homeBannerSection .slick-arrow.slick-next:after,
+.slick-prev:after, .slick-next:after,
 .swiper-button-next:after,.swiper-button-prev:after {
     color: #000!important;
     font-size: 17px!important;
     opacity: .8
 }
 
-.homeBannerSection .slick-arrow.slick-next:hover, .homeBannerSection .slick-arrow.slick-prev:hover, 
+.slick-next:hover, .slick-prev:hover, 
 .swiper-button-next:hover,.swiper-button-prev:hover {
     background: #e7e7e7!important
 }
@@ -10860,25 +10860,25 @@ nav .navPart2 ul li:hover .submenu {
     border-right: 1px solid #0000!important
 }
 
-.product_row .swiper-slide:last-child .productItem {
+.product_row .swiper-slide:last-child .productItem, .product_row .slick-slider:last-child .productItem {
     border: 1px solid #0000001a!important
 }
 
-.product_row .swiper-wrapper {
+.product_row .swiper-wrapper, .product_row .slick-track {
     display: flex;
     gap: 15px;
     padding: 5px 10px
 }
 
-.product_row .swiper-slide {
+.product_row .swiper-slide, .product_row .slick-slide {
     padding: 15px 0!important
 }
 
-.product_row .swiper-button-prev {
+.product_row .swiper-button-prev,.product_row .slick-prev {
     left: 10px!important
 }
 
-.product_row .swiper-button-next {
+.product_row .swiper-button-next, .product_row .slick-next {
     right: 10px!important
 }
 
@@ -10894,11 +10894,11 @@ nav .navPart2 ul li:hover .submenu {
     padding: 35px 0
 }
 
-.homeCat .swiper {
+.homeCat .swiper, .homeCat .slick-slider {
     overflow: inherit!important
 }
 
-.homeCat .swiper .item {
+.homeCat .swiper .item, .homeCat .slick-slider .item {
     align-items: center;
     border: 1px solid #0000001a;
     border-radius: 100%;
@@ -10909,19 +10909,19 @@ nav .navPart2 ul li:hover .submenu {
     overflow: hidden;
     padding: 0;
     transition: all .2s ease-in-out;
-    width: 120px
+    width: 120px !important
 }
 
-.homeCat .swiper .item:hover img {
+.homeCat .swiper .item:hover img, .homeCat .slick-slider .item:hover img {
     animation: mover .7s infinite alternate
 }
 
-.homeCat .swiper .item img {
+.homeCat .swiper .item img, .homeCat .slick-slider .item img  {
     background-size: cover;
     width: 60%
 }
 
-.homeCat .swiper .swiper-slide h6 {
+.homeCat .swiper .swiper-slide h6, .homeCat .slick-slider h6{
     color: #000;
     font-size: 16px;
     font-weight: 600;
@@ -10931,6 +10931,10 @@ nav .navPart2 ul li:hover .submenu {
     text-transform: capitalize;
     width: 100%
 }
+
+/* .slick-next:before, .slick-prev:before {
+    color: #000;
+} */
 
 @keyframes mover {
     0% {
@@ -10942,28 +10946,30 @@ nav .navPart2 ul li:hover .submenu {
     }
 }
 
-.homeCat .swiper .item:hover {
+.homeCat .swiper .item:hover, .homeCat .slick-slider .item:hover  {
     background: #ccc;
     box-shadow: 0 3px 6px #00000029,0 3px 6px #0000003b;
     transform: translateY(-5px)
 }
 
-.homeCat .swiper-button-next,.homeCat .swiper-button-prev {
+.homeCat .swiper-button-next,.homeCat .swiper-button-prev,
+.homeCat .slick-next,.homeCat .slick-prev {
     height: 30px!important;
     top: -30px!important;
     width: 30px!important
 }
 
-.homeCat .swiper-button-prev {
+.homeCat .swiper-button-prev, .homeCat .slick-prev {
     left: inherit!important;
     right: 30px!important
 }
 
-.homeCat .swiper-button-next {
+.homeCat .swiper-button-next, .homeCat .slick-next {
     right: -10px!important
 }
 
-.homeCat .swiper-button-next:after,.homeCat .swiper-button-prev:after {
+.homeCat .swiper-button-next:after,.homeCat .swiper-button-prev:after,
+.homeCat .slick-next:after,.homeCat .slick-prev:after {
     font-size: 12px!important
 }
 
@@ -12371,8 +12377,13 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
         flex-direction: column
     }
 
-    .product_row .swiper {
-        padding-right: 0!important
+    .product_row .swiper, .product_row .slick-slider {
+        padding-right: 80px!important
+    }
+
+    .product_row .slick-slider .slick-list{
+        /* padding: 0px 100px !important; */
+        padding: 0px 160px!important;
     }
 
     .bannerSec {
@@ -13133,7 +13144,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     --swiper-navigation-size: 44px
 }
 
-.swiper-button-next,.swiper-button-prev {
+.swiper-button-next,.swiper-button-prev,
+.slick-next, .slick-prev {
     align-items: center;
     color: var(--swiper-theme-color);
     color: var(--swiper-navigation-color,var(--swiper-theme-color));
@@ -13149,7 +13161,9 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     top: var(--swiper-navigation-top-offset,50%);
     width: 27px;
     width: calc(var(--swiper-navigation-size)/44*27);
-    z-index: 10
+    z-index: 10;
+    border-radius: 100%;
+    background: #000;
 }
 
 .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
@@ -13189,7 +13203,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     display: none
 }
 
-.swiper-button-next:after,.swiper-button-prev:after {
+.swiper-button-next:after,.swiper-button-prev:after,
+.slick-next:after,.slick-prev:after {
     font-family: swiper-icons;
     font-size: 44px;
     font-size: var(--swiper-navigation-size);

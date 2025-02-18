@@ -7,8 +7,6 @@ import { Rating } from "@mui/material";
 import { IconButton } from "@mui/material";
 import FavoriteBorderSharpIcon from "@mui/icons-material/FavoriteBorderSharp";
 import ZoomOutMapOutlinedIcon from '@mui/icons-material/ZoomOutMapOutlined';
-import Footer from "../Components/Footer";
-import Newsletter from "../Components/Newsletter";
 
 const tabData = [
     {
@@ -839,9 +837,6 @@ function Home() {
 
                 </div>  
             </section>
-
-            <Newsletter />
-            <Footer /> 
         </>
     )
 }

@@ -6,6 +6,9 @@ import Home from './Pages/Home';
 import Layout from './Pages/Layout';
 import { createContext } from 'react';
 import axios from 'axios';
+import ProductDetails from './Pages/ProductDetails';
+import SignIn from './Pages/SignIn';
+import SignUp from './Pages/SignUp';
 
 const MyContext = createContext();
 
@@ -34,7 +37,11 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" exact={true} element={<Home />} />
+          <Route path="/product-details" exact={true} element={<ProductDetails />} />
         </Route>
+
+        <Route path="/signin" exact={true} element={<SignIn />} />
+        <Route path="/signup" exact={true} element={<SignUp />} />
       </Routes>
     </MyContext.Provider>
   );
